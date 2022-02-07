@@ -2,11 +2,12 @@ import Typography from '@material-ui/core/Typography';
 
 const styles = {
   container: {
-    minHeight: 'calc(100vh - 120px)',
+    minHeight: 'calc(100vh - 100px)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'start',
+    paddingTop: 200,
   },
   title: {
     fontWeight: 500,

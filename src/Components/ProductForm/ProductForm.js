@@ -1,7 +1,37 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addProduct } from '../../redux/products/products-operations';
-import styles from './ProductForm.module.css';
+// import TextField from '@material-ui/core/TextField';
+// import Button from '@material-ui/core/Button';
+// import { makeStyles } from '@material-ui/core/styles';
+
+// const useStyles = makeStyles(theme => ({
+//   paper: {
+//     marginTop: theme.spacing(8),
+//     display: 'flex',
+//     flexDirection: 'column',
+//     // alignItems: 'center',
+//   },
+//   form: {
+//     width: '100%', // Fix IE 11 issue.
+//     marginTop: theme.spacing(1),
+//     display: 'flex',
+//     flexDirection: 'row',
+//     flexWrap: 'wrap',
+//     maxWidth: '46ch',
+//     justifyContent: 'space-between',
+//   },
+//   field: {
+//     // marginRight: '20px',
+//     maxWidth: '46ch',
+//   },
+//   submit: {
+//     margin: theme.spacing(3, 'auto', 2),
+//     flexBasis: '30%',
+//     // marginLeft: 'auto',
+//     // marginRight: 'auto',
+//   },
+// }));
 
 class ProductForm extends Component {
   state = {
@@ -94,7 +124,7 @@ class ProductForm extends Component {
           )}
 
           <div>
-            <label className={styles.label}>
+            <label>
               Вес
               <input
                 type="text"
@@ -102,13 +132,12 @@ class ProductForm extends Component {
                 name="weight"
                 required
                 onChange={this.handleChange}
-                className={styles.input}
               />
             </label>
           </div>
 
           <div>
-            <label className={styles.label}>
+            <label>
               Цвет
               <input
                 type="text"
@@ -116,13 +145,12 @@ class ProductForm extends Component {
                 name="color"
                 required
                 onChange={this.handleChange}
-                className={styles.input}
               />
             </label>
           </div>
 
           <div>
-            <label htmlFor={this.priceInputId} className={styles.label}>
+            <label htmlFor={this.priceInputId}>
               Цена
               <input
                 type="text"
@@ -130,7 +158,6 @@ class ProductForm extends Component {
                 name="price"
                 required
                 onChange={this.handleChange}
-                className={styles.input}
               />
             </label>
           </div>

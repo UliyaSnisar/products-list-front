@@ -36,7 +36,7 @@ class App extends Component {
               <Route
                 path="/register"
                 restricted
-                Navigate="/products"
+                Navigate="/login"
                 element={<RegistrationPage />}
               />
               <Route
